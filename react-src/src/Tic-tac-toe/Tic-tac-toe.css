@@ -1,0 +1,33 @@
+.tictactoe__xo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xo{
+  display:flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+}
+
+.xo__item{
+  font-size: 70px;
+  text-align: center;
+  cursor: pointer;
+  width: calc(100% /3);
+  height: calc(100% /3);
+  background-color: #009688;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.cellsrun {
+  animation: cellsrun .6s ease-in-out infinite;
+}
+
+@keyframes cellsrun {
+  from {background-color: #009688;}
+  to {background-color: #4db6ac;}
+}
